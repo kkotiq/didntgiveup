@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="libs/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <title>Дипломный проект</title>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup__form-container">
+            <h2 class="popup__heading">Закажите обратный звонок</h2>
+            <p class="popup__sub-heading">Мы перезвоним вам в течение часа</p>
+            <form class="popup__form">
+                <input type="hidden" name="project_name" value="Диплом">
+                <input type="hidden" name="admin_email" value="kemalykh@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка на сайт">
+                <label for="first-name" class="popup__form-label">* Введите ваше имя:</label>
+                <input id="first-name" required class="popup__form-input" type="text" name="Имя" placeholder="Введите ваше имя...">
+                <label for="phone-number" class="popup__form-label">* Введите ваш номер:</label>
+                <input id="phone-number" required class="popup__form-input" type="tel" name="Телефон" placeholder="8&nbsp;(___) ___-__-__">
+                <label for="email" class="popup__form-label">* Введите ваш e-mail:</label>
+                <input id="email" required class="popup__form-input" type="email" name="Почта" placeholder="Введите ваш e-mail...">
+                <div class="break"></div>
+                <label for="task-description" class="popup__form-label">Опишите задачу:</label>
+                <textarea id="task-description" class="popup__form-input" name="Описание" rows="4" placeholder="Опишите задачу..." ></textarea>
+                <small class="popup__disclaimer">* Обязательно</small>
+                <input class="popup__submit-button" type="submit" value="Заказать звонок">
+            </form>
+        </div>
+    </div>
+    <button aria-label="Наверх" class="up-button"></button>
+    <header class="header">
+        <div class="header-container fixed-container">
+            <button class="header__menu-icon"></button>
+            <nav class="navigation-menu">
+                <ul class="navigation-menu__list">
+                    <li class="navigation-menu__item"><a href="#services">Услуги</a></li>
+                    <li class="navigation-menu__item"><a href="#portfolio" class="navigation-menu__item_underlined">Портфолио</a></li>
+                    <li class="navigation-menu__item"><a href="#gradient">Стоимость</a></li>
+                </ul>
+            </nav>
+            <div class="call-menu"> 
+                <a href="tel:+74999955577" class="call-menu__tel">+7 (499) 995-55-77</a>
+                <button class="call-menu__button"><span class="call-menu__icon"></span>Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about__animated-element parenthesis">{ }</div>
+            <div class="about__animated-element grid">#</div>
+            <div class="about__animated-element div-1">&lt;div&gt;</div>
+            <div class="about__animated-element div-2">&lt;div&gt;</div>
+            <div class="about__animated-element closing-symbol">&lt;/&gt;</div>
+            <div class="about-container fixed-container">
+                <h1 class="about__name">Дмитрий Алексеев</h1>
+                <p class="about__description">Frontend-разработчик и веб-верстальщик</p>
+                <button class="more-info">Узнать больше</button>
+            </div>
+            <img class="about__photo" src="img/photo.png" alt="Дмитрий Алексеев">
+        </section>
+        <section class="services" id="services">
+            <div class="services-container fixed-container">
+                <h2 class="services__heading">Что я делаю</h2>
+                    <ul class="services__list">
+                        <li class="services__layout">Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности</li>
+                        <li class="services__responsive">Адаптивная вёрстка под все браузеры и устройства</li>
+                        <li class="services__frontend">Frontend-разработка и&nbsp;программирование</li>
+                        <li class="services__revision">Исправление и доработка существующей верстки</li>
+                    </ul>
+                <button class="more-info">Узнать стоимость</button>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-container fixed-container">
+                <h2 class="portfolio__heading">Примеры моих работ</h2>
+                <button class="swiper-button-prev"></button>
+                <button class="swiper-button-next"></button>
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img class="portfolio__item-img" src="img/psychology.png" alt="Сайт психолога Веры Антоновой"></a><p class="portfolio__item-description">Сайт психолога Веры Антоновой</p></li>
+                        <li class="swiper-slide"><a href="#"><img class="portfolio__item-img" src="img/kids.png" alt="Сайт магазина детской одежды"></a><p class="portfolio__item-description">Сайт магазина детской одежды</p></li>
+                        <li class="swiper-slide"><a href="#"><img class="portfolio__item-img" src="img/fishing.png" alt="Сайт магазина «Рыболов»"></a><p class="portfolio__item-description">Сайт магазина «Рыболов»</p></li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button class="more-info">Заказать проект</button>
+            </div>
+        </section>
+        <section class="gradient" id="gradient">
+            <div class="gradient__animated-element white-parenthesis">{ }</div>
+            <div class="gradient__animated-element white-grid">#</div>
+            <div class="gradient__animated-element white-div">&lt;div&gt;</div>
+            <div class="gradient__animated-element white-closing-symbol">&lt;/&gt;</div>
+            <div class="gradient__animated-element white-parenthesis-1">{ }</div>
+            <div class="gradient-container fixed-container">
+                <h2 class="gradient__text">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа*</h2>
+                <small class="gradient__text_small">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально,<br>в&nbsp;зависимости от&nbsp;сложности задач.</small>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-container fixed-container">
+                <nav class="footer-sections">
+                    <ul class="footer-sections__list">
+                        <li class="footer-sections__list-item"><a href="#services" class="footer-sections__list-link">Услуги</a></li>
+                        <li class="footer-sections__list-item"><a href="#portfolio" class="footer-sections__list-link">Портфолио</a></li>
+                        <li class="footer-sections__list-item"><a href="#gradient" class="footer-sections__list-link">Стоимость</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer__contacts">
+                    <li class="footer__contacts-item"><span class="symbol small-tel">O</span><a href="tel:+74999957755" class="footer__tel"> +7 (499) 995-77-55</a></li>
+                    <li class="footer__contacts-item"><span class="symbol small-mail">m</span><a href="mailto:dmitry@alekseev.com" class="footer__mail">dmitry@alekseev.com</a></li>
+                </ul>
+                <div class="footer__socials">
+                    <button class="footer__call-button">Заказать звонок</button>
+                    <ul class="footer__social-media">
+                        <li class="footer__social-media-item"><a href="https://vk.com/" aria-label="VK" class="footer__social-media-link vk" target="_blank"></a></li>
+                        <li class="footer__social-media-item"><a href="https://www.facebook.com/" aria-label="Facebook" class="footer__social-media-link fb" target="_blank"></a></li>
+                        <li class="footer__social-media-item"><a href="https://twitter.com/" aria-label="Twitter" class="footer__social-media-link tw" target="_blank"></a></li>
+                        <li class="footer__social-media-item"><a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social-media-link inst" target="_blank"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Дмитрий Алексеев, 2016-2020
+        </div>
+    </footer>
+<script src="libs/swiper.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="libs/jquery.inputmask.js"></script>
+<script src="libs/jquery.validate.min.js"></script>
+<script>
+    $('input[type="tel"]').inputmask({"mask": "8 (999) 999-99-99"});
+    $('form').each(function (){
+        $(this).validate({
+            errorPlacement(error, element){
+                return true;
+            },
+            focusInvalid: false,
+            rules: {
+                Имя: {
+                    required: true,
+                },
+                Телефон: {
+                    required: true,
+                },
+                Почта: {
+                    required: true,
+                }
+            },
+            submitHandler(form) {
+                let th = $(form);
+                $.ajax({
+                    type: 'POST',
+                    url: 'mail.php',
+                    data: th.serialize(),
+                }).done(() => {
+                    alert('Отправлено');
+                    th.trigger('reset');
+                });
+
+                return false;
+            }
+        })
+    });
+</script>
+</body>
+</html>
