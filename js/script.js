@@ -44,6 +44,11 @@ $(document).ready(function(){
         } else {
             $('.popup__form-input').removeClass('error');
         }
+
+        $('.popup__notification').fadeIn();
+        setTimeout(function(){
+            $('.popup__notification').fadeOut();
+        }, 2000);
     });
 
     $(document).mouseup(function (e){ 

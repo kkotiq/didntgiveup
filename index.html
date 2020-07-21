@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="popup">
+        <div class="popup__notification">Отправлено!</div>
         <div class="popup__form-container">
             <h2 class="popup__heading">Закажите обратный звонок</h2>
             <p class="popup__sub-heading">Мы перезвоним вам в течение часа</p>
@@ -40,7 +41,7 @@
             <nav class="navigation-menu">
                 <ul class="navigation-menu__list">
                     <li class="navigation-menu__item"><a href="#services">Услуги</a></li>
-                    <li class="navigation-menu__item"><a href="#portfolio" class="navigation-menu__item_underlined">Портфолио</a></li>
+                    <li class="navigation-menu__item"><a href="#portfolio">Портфолио</a></li>
                     <li class="navigation-menu__item"><a href="#gradient">Стоимость</a></li>
                 </ul>
             </nav>
@@ -163,7 +164,6 @@
                     url: 'mail.php',
                     data: th.serialize(),
                 }).done(() => {
-                    alert('Отправлено');
                     th.trigger('reset');
                 });
 
