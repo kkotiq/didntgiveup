@@ -116,8 +116,8 @@ a:hover {
     border: none;
     outline: none;
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .2);
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2);
 }
 
 .up-button:hover {
@@ -150,8 +150,8 @@ a:hover {
     font-size: 16px;
     font-weight: bold;
     background-color: rgba(143, 229, 143, 0.808);
-    -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, .3);
-    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .2);
 }
 
 .popup__form-container {
@@ -162,8 +162,8 @@ a:hover {
     background-color: white;
     margin: 30px auto;
     padding: 0 15px;
-    -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, .3);
-    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .3);
 }
 
 .popup__heading {
@@ -277,8 +277,8 @@ a:hover {
 
 .header__menu-icon {
     display: none;
-    width: 35px;
-    height: 25px;
+    width: 31px;
+    height: 22px;
     background-image: url('img/menu-logo.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -532,8 +532,8 @@ a:hover {
 
 .about__photo {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     z-index: 1;
     height: 630px;
 }
@@ -745,8 +745,8 @@ a:hover {
          -o-transition-duration: 0.2s;
             transition-duration: 0.2s;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .2);
-            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
 }
 
 .swiper-button-prev:hover,
@@ -1514,7 +1514,7 @@ a:hover {
     } 
 
     .swiper-pagination {
-        bottom: 0px !important;
+        bottom: 0 !important;
     }
 
     .white-parenthesis {
@@ -2169,7 +2169,7 @@ a:hover {
     
     .small-mail {
         padding-right: 24px;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .footer__contacts {
@@ -2249,7 +2249,7 @@ a:hover {
     }
 
     .call-menu__button {
-        margin-left: 20px;
+        margin-left: 0;
     }
 
     .navigation-menu {
