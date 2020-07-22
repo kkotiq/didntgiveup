@@ -2138,7 +2138,7 @@ a:hover {
     }
 
     .call-menu {
-        width: 70%;
+        width: 68%;
     }
 
     .about__photo {
@@ -2250,8 +2250,9 @@ a:hover {
     .break {
         display: none;
     }
+
     .call-menu {
-        width: auto;
+        width: 78%;
     }
 
     .call-menu__button {
