@@ -1670,6 +1670,11 @@ a:hover {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        width: 100%;
+    }
+
+    .call-menu__tel {
+        margin-left: 290px;
     }
 
     .swiper-container {
@@ -1748,10 +1753,6 @@ a:hover {
         padding: 10px 0;
         width: 130px;
         font-size: 12px;
-    }
-
-    .call-menu {
-        width: 65%;
     }
 
     .call-menu__button {
@@ -2137,10 +2138,6 @@ a:hover {
         padding: 0 20px;
     }
 
-    .call-menu {
-        width: 68%;
-    }
-
     .about__photo {
         left: 0;
     }
@@ -2249,10 +2246,6 @@ a:hover {
 
     .break {
         display: none;
-    }
-
-    .call-menu {
-        width: 78%;
     }
 
     .call-menu__button {
