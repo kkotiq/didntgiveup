@@ -37,6 +37,7 @@
     <button aria-label="Наверх" class="up-button"></button>
     <header class="header">
         <div class="header-container fixed-container">
+            <button class="header__menu-icon"></button>
             <nav class="navigation-menu">
                 <ul class="navigation-menu__list">
                     <li class="navigation-menu__item"><a href="#services">Услуги</a></li>
@@ -44,11 +45,8 @@
                     <li class="navigation-menu__item"><a href="#gradient">Стоимость</a></li>
                 </ul>
             </nav>
-            <div class="call-menu"> 
-                <button class="header__menu-icon"></button>
-                <a href="tel:+74999955577" class="call-menu__tel">+7 (499) 995-55-77</a>
-                <button class="call-menu__button"><span class="call-menu__icon"></span>Заказать звонок</button>
-            </div>
+            <a href="tel:+74999955577" class="header__tel">+7 (499) 995-55-77</a>
+            <button class="header__call-button"><span class="header__call-icon"></span>Заказать звонок</button>
         </div>
     </header>
     <main>
@@ -165,6 +163,10 @@
                     data: th.serialize(),
                 }).done(() => {
                     th.trigger('reset');
+                    $('.popup__notification').fadeIn();
+                    setTimeout(function(){
+                        $('.popup__notification').fadeOut();
+                    }, 2000);
                 });
 
                 return false;
