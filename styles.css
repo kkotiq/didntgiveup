@@ -275,6 +275,30 @@ a:hover {
             align-items: center;
 }
 
+.header__menu-close {
+    display: none;
+    width: 24px;
+    height: 24px;
+    background-image: url(img/close.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+
+.header__menu-close:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+
 .header__menu-icon {
     display: none;
     width: 31px;
@@ -788,6 +812,7 @@ a:hover {
 .gradient {
     position: relative;
     padding: 77px 0 86px;
+    background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
     background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
     background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
     background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
@@ -1735,6 +1760,7 @@ a:hover {
     }
 
     .header__call-button {
+        margin: 0;
         width: 35px;
         height: 35px;
         border-radius: 50%;

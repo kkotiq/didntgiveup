@@ -1,10 +1,15 @@
 $(document).ready(function(){
     $('.header__menu-icon').on('click', function(){
-        if ($('.navigation-menu').css('display') == 'block') {
-            $('.navigation-menu').slideUp();
-        } else {
-            $('.navigation-menu').slideDown();
-        }
+        $('.navigation-menu').slideDown();
+        $('.header__menu-icon').hide();
+        $('.header__menu-close').show();
+
+    });
+
+    $('.header__menu-close').on('click', function(){
+        $('.navigation-menu').slideUp();
+        $('.header__menu-close').hide();
+        $('.header__menu-icon').show();
     });
 
     $('nav a').on('click', function(e){
@@ -28,7 +33,7 @@ $(document).ready(function(){
         $('.popup').fadeIn();
     });
 
-    $('.call-menu__button').on('click', function(){
+    $('.header__call-button').on('click', function(){
         $('body, html').addClass('scroll-disabled')
         $('.popup').fadeIn();
     });
