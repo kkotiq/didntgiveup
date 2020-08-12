@@ -1,3 +1,3 @@
-# skillbox-finaltask
+# single-page-portfolio
 
-Дипломная работа по курсу Веб-верстка в Skillbox
+an example of a single-page web-developer's portfolio
