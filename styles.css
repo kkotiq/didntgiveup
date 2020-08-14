@@ -139,6 +139,7 @@ a:hover {
 }
 
 .popup__notification {
+    z-index: 100;
     display: none;
     position: absolute;
     right: 20px;
@@ -277,8 +278,8 @@ a:hover {
 
 .header__menu-close {
     display: none;
-    width: 24px;
-    height: 24px;
+    width: 31px;
+    height: 31px;
     background-image: url(img/close.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -812,6 +813,7 @@ a:hover {
 .gradient {
     position: relative;
     padding: 77px 0 86px;
+    background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
     background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
     background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
     background: -o-linear-gradient(left bottom,#ff8f5a, #ff2f96) ;
@@ -1773,7 +1775,7 @@ a:hover {
         padding: 0;
         -webkit-transition-duration: 0.2s;
              -o-transition-duration: 0.2s;
-                transition-duration: 0.2s
+                transition-duration: 0.2s;
     }
 
     .header__call-button:hover {
@@ -1892,6 +1894,14 @@ a:hover {
 
     .white-parenthesis, .white-closing-symbol, .white-div {
         display: none;
+    }
+
+    .services__layout, .services__frontend {
+        margin-right: 40px;
+    }
+
+    .services__responsive, .services__revision {
+        margin-left: 40px;
     }
 
     .footer {
@@ -2074,6 +2084,7 @@ a:hover {
     .services__responsive,
     .services__frontend,
     .services__revision {
+        margin-left: 0;
         margin-right: 0;
         margin-bottom: 50px;
     }
@@ -2193,17 +2204,18 @@ a:hover {
         border: none;
         outline: none;
         cursor: pointer;
-        -webkit-transition-duration: 0.3s;
-             -o-transition-duration: 0.3s;
-                transition-duration: 0.3s;
+        -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
+                 transition: 0.2s;
     }
 
     .footer__call-button:hover {
-        width: 290px;
-        height: 70px;
-        -webkit-transition-duration: 0.5s;
-             -o-transition-duration: 0.5s;
-                transition-duration: 0.5s;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
+                   transition: 0.2s;
         border: none;
         color: white;
     }
