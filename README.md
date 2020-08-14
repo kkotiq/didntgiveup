@@ -1,3 +1,3 @@
-# single-page-portfolio
+# portfolio website
 
-an example of a single-page web-developer's portfolio
+an example of web-developer's portfolio website
